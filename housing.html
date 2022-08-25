@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>RECOMB 2004</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<SCRIPT language=Javascript>
+<!-- Hide script from old browsers
+
+
+
+document.WM = new Object();
+document.WM.hirelist = new Object();
+document.WM.hirelist.expandos = new Array();
+document.WM.hirelist.heights = new Array();
+document.WM.hirelist.names = new Array();
+
+function WM_toggle(id) {
+  if (document.all){
+    if(document.all[id].style.display == 'none'){
+      document.all[id].style.display = '';
+    } else {
+      document.all[id].style.display = 'none';
+    }
+  } else if (document.getElementById){
+    if(document.getElementById(id).style.display == 'none'){
+      document.getElementById(id).style.display = 'block';
+    } else {
+      document.getElementById(id).style.display = 'none';
+    }
+  } else if(document.layers) {
+      if(parseInt(id + 1)){
+	  ditem = id + 1;
+      } else {
+	  ditem = document.WM.hirelist.names[id];
+      }
+      if(document.WM.hirelist.expandos[ditem].clip.bottom == 0) {
+	     document.WM.hirelist.expandos[ditem].clip.bottom = document.WM.hirelist.heights[ditem];
+      } else {
+	  document.WM.hirelist.expandos[ditem].clip.bottom = 0;
+      }
+      WM_align();
+  }
+}
+
+function WM_align() {
+    var i,j,stupid_netscape_array_infinate_loop_error;
+    stupid_netscape_array_infinate_loop_error = document.WM.hirelist.expandos.length;
+    for(i=0; i<stupid_netscape_array_infinate_loop_error; i++) {
+		j = i + 1;
+		if(document.WM.hirelist.expandos[j]){
+	    	if(document.layers) {
+				document.WM.hirelist.expandos[j].top = document.WM.hirelist.expandos[i].top + document.WM.hirelist.expandos[i].clip.bottom;
+	   		}
+		}
+    }
+}
+
+function WM_initialize_toolbar(){
+    if(document.layers) {
+		for(i=0; i<document.layers['container'].document.layers.length; i++){
+	    	document.WM.hirelist.expandos[i] = document.layers['container'].document.layers[i];
+	    	document.WM.hirelist.names[document.layers['container'].document.layers[i].name] = i;
+	    	document.WM.hirelist.heights[i] = document.WM.hirelist.expandos[i].clip.bottom;
+		}
+		for (p=0;p<document.WM.hirelist.expandos.length;p=p+2){
+	    	WM_toggle(p);
+		}
+		document.layers['container'].visibility = 'visible';
+    } else if (document.all){
+		for(i = 0; i < document.all('container').all.length; i++){
+		    document.all('container').all[i].style.position = 'relative';
+		    if(document.all('container').all[i].className == 'menu'){
+			document.all('container').all[i].style.display = 'none';
+		    }
+		}
+		document.all('container').style.visibility = 'visible';
+    } else if (document.getElementsByTagName && document.getElementById){
+		var contained = document.getElementById('container').getElementsByTagName('div');
+		for(i = 0; i < contained.length; i++){
+		    contained[i].style.position = 'relative';
+		    if(contained[i].getAttribute('class') == 'menu'){
+			contained[i].style.display = 'none';
+		    }
+		}
+		document.getElementById('container').style.visibility = 'visible';
+    }
+}
+
+// End the hiding -->
+</SCRIPT>
+<SCRIPT language=JavaScript>
+<!--
+function WM_imageToggle(daImage, src1, src2, netscape_container){
+  var objStr,obj;
+  // Check to make sure that images are supported in the DOM.
+	  myImage = document.images[daImage];
+  if(document.layers){
+      myImage = document.layers['container'].document.layers[netscape_container].document.images[daImage];
+  }
+  if(document.images){
+    // Check to see whether you are using a name, number, or object
+      if(myImage.src == src1){
+	  	myImage.src = src2;
+      } else {
+	  	myImage.src = src1;
+      }
+  }
+}
+// -->
+</SCRIPT>
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR>
+
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<link rel="stylesheet" href="recomb.css" type="text/css">
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#336633" vlink="#336633" alink="#336633" topmargin="0" onload=WM_initialize_toolbar();>
+<table width="625" border="0" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td valign="top" height="43" width="625"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="3"><i><font size="4"><b><font color="152F90">Housing 
+        Information </font></b></font></i></font></p>
+      <p><font size="4" face="Arial, Helvetica, sans-serif" color="red"><b>HOTEL SOLD OUT </b></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">contact booking agency...</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To locate a nearby hotel at a discounted rate contact the booking agency.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">San Diego Concierge<br>
+  1-800-979-9091 or local 619-280-4121</font></p>
+      <hr align="left" width="500" size="3">      <p><br>
+        <font size="2" face="Arial, Helvetica, sans-serif">A block of rooms has 
+            been reserved at a reduced rate for RECOMB2004 attendees at the Westin 
+            Hotel Horton Plaza in San Diego. Conference attendees must identify the 
+            special group code to qualify for the reduced rates. Rooms will be assigned 
+        on a first-come first-served basis. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Westin Hotel Horton 
+        Plaza&#151;San Diego<br>
+        MAP: <a href="http://www.westin.signonsandiego.com/2.html">http://www.westin.signonsandiego.com/2.html</a><br>
+        910 Broadway Circle <br>
+        San Diego, CA 92101 USA </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Group discount rates</font></p>
+      <table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="125"><font size="2" face="Arial, Helvetica, sans-serif">Single&#151;US$149.00</font></td>
+          <td width="125"> 
+            <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">Double&#151;US$159</font></div>
+          </td>
+        </tr>
+      </table>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <i>All rooms are 
+        subject to an Occupancy tax currently at 10.545%</i><br>
+        <br>
+        <a href="http://www.acm.org/sig_volunteer_info/whyhotel.htm" target="_blank">Why stay at the conference hotel</a>? 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>RESERVATIONS</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">+1-800-WESTIN-1<br>
+        +1-619-239-2200<br>
+        FAX: +1-619-239-0509<br>
+        e-mail: <a href="mailto:westinhp@starlodge.com">westinhp@starlodge.com</a></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>ON-LINE RESERVATIONS 
+        INSTRUCTIONS</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.starwood.com/westin/meetings/pre_decider_all.html?bn=westin&rcc=WI&rac=WI&city=San+Diego&stateProvince=CA&country=US&groupBlockID=2036&requestedChainCode=&requestedAffiliationCode=&hcount=0&fromSearch=78XX&propertyID=1009&maximumReservationRooms=9&roomrc=&returnURL=%2Fwestin%2Fmeetings%2Fpre_decider_all.html" target="_blank"><b>Make 
+        a Reservation On-line</b></a></font></p>
+      <p><font color="#FF0000"><b><font size="2" face="Arial, Helvetica, sans-serif">NOTE</font></b><font size="2" face="Arial, Helvetica, sans-serif">: 
+        If you plan to attend a few days before and a few days after the conference 
+        block, you may encounter an error message through on-line reservations 
+        that the room is not available. If you receive this error, please contact 
+        the hotel directly at +1-619-239-2200 for assistance.</font></font>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>DEPOSIT REQUIREMENTS</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">When making reservations, 
+        a deposit equal to one night&#146;s room rate and tax or a credit card 
+        number with expiration date will be required to guarantee the reservation. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>AMENITIES</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Air conditioning, 
+        Cable TV, Coffee makers in-room, Dining Facilities, Handicap accessibility, 
+        Health club facilities, Computer modem hookup, Room Service, Swimming 
+        pool (outdoor), Jacuzzi (outdoor), Business Center, Two telephone lines 
+        in room, Two restaurants</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>EARLY DEPARTURE</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">In the event a guest 
+        checks out prior to the reserved checkout date an early departure fee 
+        of U$75.00 will be charged to the guests individual account. To avoid 
+        this fee, guests much advise the hotel at or before check-in of any changes 
+        in the scheduled length of stay. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>DEADLINE/CUT-OFF 
+        DATE</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Reservations must 
+        be made by Friday, March 5, 2004 to be guaranteed the group discounted 
+        rate.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>CANCELLATION DEADLINE</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Cancellations made 
+        less than 24 hours prior to reservation will incur a charge of one night 
+        rate.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>CHECK IN/CHECK 
+        OUT TIMES </b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">In - 3:00pm<br>
+        Out - 12noon</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>PARKING</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Valet parking at the 
+        hotel is $25 per day<br>
+        Self parking is $20 per day</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>AIRPORT TRANSPORTATION</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Transportation is 
+        available from the airport via taxi or Cloud 9 shuttle service. The hotel 
+        is located a 10 minute drive from the airport.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>DIRECTIONS</b> 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>South on Interstate-5 
+        to Downtown San Diego </b><br>
+        Exit Front Street.<br>
+        Front Street to E Street.<br>
+        Right on E Street 1.5 blocks in the main hotel drive.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>North on Interstate-5 
+        </b><br>
+        Exit 6th Street.<br>
+        Left on 6th Street for about 1 mile to Broadway<br>
+        Right on Broadway for 3 blocks to Broadway circle.<br>
+        Left on Broadway circle. The Westin will be to the right.</font></p>
+  </tr>
+  <tr>
+    <td valign="top" height="43" width="625">
+  </tr>
+</table>
+</body>
+</html>

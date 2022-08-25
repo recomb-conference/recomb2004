@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>RECOMB 2004</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<SCRIPT language=Javascript>
+<!-- Hide script from old browsers
+
+
+
+document.WM = new Object();
+document.WM.hirelist = new Object();
+document.WM.hirelist.expandos = new Array();
+document.WM.hirelist.heights = new Array();
+document.WM.hirelist.names = new Array();
+
+function WM_toggle(id) {
+  if (document.all){
+    if(document.all[id].style.display == 'none'){
+      document.all[id].style.display = '';
+    } else {
+      document.all[id].style.display = 'none';
+    }
+  } else if (document.getElementById){
+    if(document.getElementById(id).style.display == 'none'){
+      document.getElementById(id).style.display = 'block';
+    } else {
+      document.getElementById(id).style.display = 'none';
+    }
+  } else if(document.layers) {
+      if(parseInt(id + 1)){
+	  ditem = id + 1;
+      } else {
+	  ditem = document.WM.hirelist.names[id];
+      }
+      if(document.WM.hirelist.expandos[ditem].clip.bottom == 0) {
+	     document.WM.hirelist.expandos[ditem].clip.bottom = document.WM.hirelist.heights[ditem];
+      } else {
+	  document.WM.hirelist.expandos[ditem].clip.bottom = 0;
+      }
+      WM_align();
+  }
+}
+
+function WM_align() {
+    var i,j,stupid_netscape_array_infinate_loop_error;
+    stupid_netscape_array_infinate_loop_error = document.WM.hirelist.expandos.length;
+    for(i=0; i<stupid_netscape_array_infinate_loop_error; i++) {
+		j = i + 1;
+		if(document.WM.hirelist.expandos[j]){
+	    	if(document.layers) {
+				document.WM.hirelist.expandos[j].top = document.WM.hirelist.expandos[i].top + document.WM.hirelist.expandos[i].clip.bottom;
+	   		}
+		}
+    }
+}
+
+function WM_initialize_toolbar(){
+    if(document.layers) {
+		for(i=0; i<document.layers['container'].document.layers.length; i++){
+	    	document.WM.hirelist.expandos[i] = document.layers['container'].document.layers[i];
+	    	document.WM.hirelist.names[document.layers['container'].document.layers[i].name] = i;
+	    	document.WM.hirelist.heights[i] = document.WM.hirelist.expandos[i].clip.bottom;
+		}
+		for (p=0;p<document.WM.hirelist.expandos.length;p=p+2){
+	    	WM_toggle(p);
+		}
+		document.layers['container'].visibility = 'visible';
+    } else if (document.all){
+		for(i = 0; i < document.all('container').all.length; i++){
+		    document.all('container').all[i].style.position = 'relative';
+		    if(document.all('container').all[i].className == 'menu'){
+			document.all('container').all[i].style.display = 'none';
+		    }
+		}
+		document.all('container').style.visibility = 'visible';
+    } else if (document.getElementsByTagName && document.getElementById){
+		var contained = document.getElementById('container').getElementsByTagName('div');
+		for(i = 0; i < contained.length; i++){
+		    contained[i].style.position = 'relative';
+		    if(contained[i].getAttribute('class') == 'menu'){
+			contained[i].style.display = 'none';
+		    }
+		}
+		document.getElementById('container').style.visibility = 'visible';
+    }
+}
+
+// End the hiding -->
+</SCRIPT>
+<SCRIPT language=JavaScript>
+<!--
+function WM_imageToggle(daImage, src1, src2, netscape_container){
+  var objStr,obj;
+  // Check to make sure that images are supported in the DOM.
+	  myImage = document.images[daImage];
+  if(document.layers){
+      myImage = document.layers['container'].document.layers[netscape_container].document.images[daImage];
+  }
+  if(document.images){
+    // Check to see whether you are using a name, number, or object
+      if(myImage.src == src1){
+	  	myImage.src = src2;
+      } else {
+	  	myImage.src = src1;
+      }
+  }
+}
+// -->
+</SCRIPT>
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR>
+
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<link rel="stylesheet" href="recomb.css" type="text/css">
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#336633" vlink="#336633" alink="#336633" topmargin="0" onload=WM_initialize_toolbar();>
+<table width="600" border="0" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td width="570" height="3" colspan="3" valign="top"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="3"><i><font size="4"><b><font color="152F90">RECOMB 
+        Invited Keynote Speakers</font></b></font></i></font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+        <br>
+        One of the highlights of each RECOMB conference is a collection of nine 
+        keynotes awarded to researchers of highest international esteem who are 
+        asked to inform the community about landmark advances in computational 
+        and experimental research and inject new directions into the field of 
+        computational molecular biology. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>2004 Keynotes<br>
+        </b></font></p>
+  </tr>
+</table>
+<table width="600" border="0" cellspacing="3" cellpadding="3">
+  <tr valign="top">
+    <td><p><strong><font face="Arial, Helvetica, sans-serif" size="2">2004 Award Recipient<br>
+  The Distinguished New Technologies Lecture </font></strong></p>
+    <p><font face="Arial, Helvetica, sans-serif" size="2">Carlos Bustamante<i>, University of California Berkeley<br>
+    </i><a href="http://alice.berkeley.edu/" target="_blank">http://alice.berkeley.edu/</a><i> </i></font></p>
+    <p><font face="Arial, Helvetica, sans-serif" size="2"><strong>Title:</strong> Recent Advances on the Manipulation of Single Biomolecules<br>
+        <a href="abstracts/bustamante.pdf">Abstract</a> (pdf) </font></p></td>
+    <td><img src="images/carlos.jpg"></td>
+  </tr>
+  <tr valign="top">
+    <td height="3" colspan="2"><hr width="600" size="1" noshade color="#666666"></td>
+  </tr>
+  <tr valign="top">
+    <td><p><strong><font face="Arial, Helvetica, sans-serif" size="2">2004 Award Recipient<br>
+  The Stanislaw Ulam Memorial Computational Biology Lecture</font> </strong></p>
+    <p><font face="Arial, Helvetica, sans-serif" size="2">Russell Doolittle<i>, University of California San Diego<br>
+    </i><a href="http://biology.ucsd.edu/faculty/doolittle.html" target="_blank">http://biology.ucsd.edu/faculty/doolittle.html </a></font></p>
+    <p><font face="Arial, Helvetica, sans-serif" size="2"><strong>Title:</strong> Fifty Years of Sequence Analysis: What Have We Learned?<br>
+        <a href="abstracts/doolittle.pdf">Abstract</a> (pdf) </font></p></td>
+    <td><img src="images/doolittle.jpg"></td>
+  </tr>
+  <tr valign="top">
+    <td height="3" colspan="2"><hr width="600" size="1" noshade color="#666666"></td>
+  </tr>
+  <tr valign="top">
+    <td><p><strong><font face="Arial, Helvetica, sans-serif" size="2">2004 Award Recipient<br>
+  The Distinguished Biology Lecture </font></strong></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Andrew Fire<i>, Carnegie Institution of Washington<br>
+      </i><a href="http://www.bio.jhu.edu/directory/faculty/fire/default.html" target="_blank">http://www.bio.jhu.edu/directory/faculty/fire/default.html </a></font></p>
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Title:</strong> RNAi, Genome Ultrastructure, and Other Unexpected Tales from the Analysis of Genetic Silencing<br>
+        <a href="abstracts/fire.pdf">Abstract</a> (pdf) </font></p></td>
+    <td><img src="images/Fire.jpg"></td>
+  </tr>
+  <tr valign="top">
+    <td height="3" colspan="2"><hr width="600" size="1" noshade color="#666666"></td>
+  </tr>
+  <tr valign="top">
+    <td width="450"><p><strong><font face="Arial, Helvetica, sans-serif" size="2">2004 Award Recipient <br>
+    Fred Howes Distinguished Service Award</font></strong></p>
+    <p><font face="Arial, Helvetica, sans-serif" size="2">Richard Karp<i>, University of California Berkeley<br>
+    </i><a href="http://www.cs.berkeley.edu/People/Faculty/Homepages/karp.html" target="_blank">http://www.cs.berkeley.edu/People/Faculty/Homepages/karp.html </a></font></p>
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Title:</strong> Algorithms for Inferring <em>Cis</em>-Regulatory Structures and Protein Interaction Networks<br>
+        <a href="abstracts/karp.pdf">Abstract</a> (pdf) </font></p></td>
+    <td width="150"><img src="images/karp.gif"></td>
+  </tr>
+  <tr valign="top">
+    <td height="3" colspan="2"><hr width="600" size="1" noshade color="#666666"></td>
+  </tr>
+  <tr valign="top">
+    <td width="450"><p><font face="Arial, Helvetica, sans-serif" size="2">William McGinnis<i>, University of California San Diego<br>
+    </i><a href="http://www.biology.ucsd.edu/labs/mcginnis/" target="_blank">http://www.biology.ucsd.edu/labs/mcginnis/</a></font></p>
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Title:</strong> Evolutionary Change in Developmental Genetic Networks<br>
+        <a href="abstracts/mcginnis.pdf">Abstract</a> (pdf) </font></p></td>
+    <td width="150"><img src="images/Bill.gif"></td>
+  </tr>
+  <tr valign="top">
+    <td height="3" colspan="2"><hr width="600" size="1" noshade color="#666666"></td>
+  </tr>
+  <tr valign="top">
+    <td width="450"><p><font face="Arial, Helvetica, sans-serif" size="2">Deborah Nickerson<i>, University of Washington<br>
+      </i><a href="http://droog.gs.washington.edu/" target="_blank">http://droog.gs.washington.edu/ </a></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><strong>Title:</strong> SNPing in the Human Genome<br>
+      <a href="abstracts/nickerson.pdf">Abstract</a> (pdf)      </font></p></td>
+    <td width="150"><img src="images/nickerson.jpg"></td>
+  </tr>
+  <tr valign="top">
+    <td height="3" colspan="2"><hr width="600" size="1" noshade color="#666666"></td>
+  </tr>
+  <tr valign="top">
+    <td width="450"><p><font face="Arial, Helvetica, sans-serif" size="2">Martin Nowak<i>, Harvard University<br>
+    </i><a href="http://www.oeb.harvard.edu/nowak/nowak.htm" target="_blank">http://www.oeb.harvard.edu/nowak/nowak.htm</a></font></p>
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Title:</strong> Somatic Evolution of Cancer</font></p></td>
+    <td width="150"><img src="images/newmartin.jpg"></td>
+  </tr>
+  <tr valign="top">
+    <td height="3" colspan="2"><hr width="600" size="1" noshade color="#666666"></td>
+  </tr>
+  <tr valign="top">
+    <td width="450"><p><font face="Arial, Helvetica, sans-serif" size="2">Christine Orengo<i>, University College London<br>
+    </i><a href="http://www.biochem.ucl.ac.uk/%7Eorengo/" target="_blank">http://www.biochem.ucl.ac.uk/~orengo/</a></font></p>
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Title:</strong> A Structural Perspective on Genome Evolution<br>
+        <a href="abstracts/orengo.pdf">Abstract</a> (pdf) </font></p></td>
+    <td width="150"><img src="images/Orengo_Christine.jpg"></td>
+  </tr>
+  <tr valign="top">
+    <td height="3" colspan="2"><hr width="600" size="1" noshade color="#666666"></td>
+  </tr>
+  <tr valign="top">
+    <td width="450" height="3"><p><font face="Arial, Helvetica, sans-serif" size="2">Elizabeth Winzeler</font><em><font size="2" face="Arial, Helvetica, sans-serif">, </font></em><font face="Arial, Helvetica, sans-serif" size="2"><i>Scripps Research Institute<br>
+        </i><a href="http://www.scripps.edu/cb/winzeler/index.html" target="_blank">http://www.scripps.edu/cb/winzeler/index.html </a></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Title:</strong> Systems Biology and Malaria<br>
+          <a href="abstracts/winzler.pdf">Abstract</a> (pdf)     </font></p></td>
+    <td width="150" height="3"><div align="left"><img src="images/Elizabeth.jpg"></div></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

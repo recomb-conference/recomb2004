@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>RECOMB 2004</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<SCRIPT language=Javascript>
+<!-- Hide script from old browsers
+
+
+
+document.WM = new Object();
+document.WM.hirelist = new Object();
+document.WM.hirelist.expandos = new Array();
+document.WM.hirelist.heights = new Array();
+document.WM.hirelist.names = new Array();
+
+function WM_toggle(id) {
+  if (document.all){
+    if(document.all[id].style.display == 'none'){
+      document.all[id].style.display = '';
+    } else {
+      document.all[id].style.display = 'none';
+    }
+  } else if (document.getElementById){
+    if(document.getElementById(id).style.display == 'none'){
+      document.getElementById(id).style.display = 'block';
+    } else {
+      document.getElementById(id).style.display = 'none';
+    }
+  } else if(document.layers) {
+      if(parseInt(id + 1)){
+	  ditem = id + 1;
+      } else {
+	  ditem = document.WM.hirelist.names[id];
+      }
+      if(document.WM.hirelist.expandos[ditem].clip.bottom == 0) {
+	     document.WM.hirelist.expandos[ditem].clip.bottom = document.WM.hirelist.heights[ditem];
+      } else {
+	  document.WM.hirelist.expandos[ditem].clip.bottom = 0;
+      }
+      WM_align();
+  }
+}
+
+function WM_align() {
+    var i,j,stupid_netscape_array_infinate_loop_error;
+    stupid_netscape_array_infinate_loop_error = document.WM.hirelist.expandos.length;
+    for(i=0; i<stupid_netscape_array_infinate_loop_error; i++) {
+		j = i + 1;
+		if(document.WM.hirelist.expandos[j]){
+	    	if(document.layers) {
+				document.WM.hirelist.expandos[j].top = document.WM.hirelist.expandos[i].top + document.WM.hirelist.expandos[i].clip.bottom;
+	   		}
+		}
+    }
+}
+
+function WM_initialize_toolbar(){
+    if(document.layers) {
+		for(i=0; i<document.layers['container'].document.layers.length; i++){
+	    	document.WM.hirelist.expandos[i] = document.layers['container'].document.layers[i];
+	    	document.WM.hirelist.names[document.layers['container'].document.layers[i].name] = i;
+	    	document.WM.hirelist.heights[i] = document.WM.hirelist.expandos[i].clip.bottom;
+		}
+		for (p=0;p<document.WM.hirelist.expandos.length;p=p+2){
+	    	WM_toggle(p);
+		}
+		document.layers['container'].visibility = 'visible';
+    } else if (document.all){
+		for(i = 0; i < document.all('container').all.length; i++){
+		    document.all('container').all[i].style.position = 'relative';
+		    if(document.all('container').all[i].className == 'menu'){
+			document.all('container').all[i].style.display = 'none';
+		    }
+		}
+		document.all('container').style.visibility = 'visible';
+    } else if (document.getElementsByTagName && document.getElementById){
+		var contained = document.getElementById('container').getElementsByTagName('div');
+		for(i = 0; i < contained.length; i++){
+		    contained[i].style.position = 'relative';
+		    if(contained[i].getAttribute('class') == 'menu'){
+			contained[i].style.display = 'none';
+		    }
+		}
+		document.getElementById('container').style.visibility = 'visible';
+    }
+}
+
+// End the hiding -->
+</SCRIPT>
+<SCRIPT language=JavaScript>
+<!--
+function WM_imageToggle(daImage, src1, src2, netscape_container){
+  var objStr,obj;
+  // Check to make sure that images are supported in the DOM.
+	  myImage = document.images[daImage];
+  if(document.layers){
+      myImage = document.layers['container'].document.layers[netscape_container].document.images[daImage];
+  }
+  if(document.images){
+    // Check to see whether you are using a name, number, or object
+      if(myImage.src == src1){
+	  	myImage.src = src2;
+      } else {
+	  	myImage.src = src1;
+      }
+  }
+}
+// -->
+</SCRIPT>
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR>
+
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<link rel="stylesheet" href="recomb.css" type="text/css">
+</HEAD>
+<body bgcolor="#000066" text="#000000" link="#336633" vlink="#336633" alink="#336633" topmargin="0" onload=WM_initialize_toolbar();>
+<div id="container" style="position:absolute; left:11px; top:230px; width:145px; height:300px; z-index:1; background-color: D9E5E5; layer-background-color: D9E5E5; border: 1px none #000000; overflow: visible"> 
+  <DIV id=secondheader
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 140px; layer-background-color: #D9E5E5"><A
+href="index.html">
+<IMG border=0 name=secondImage src="images/nav/homeUp.gif"></A> </DIV>
+  <DIV class=menu id=second
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 100px; layer-background-color: #D9E5E5"> 
+  </DIV>
+<DIV id=thirdheader
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 140px; layer-background-color: #D9E5E5">
+<a href="registration.html"> <IMG border=0 height=20 name=secondImage src="images/nav/regUp.gif"
+width=140></A></DIV>
+  <DIV class=menu id=third
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 100px; layer-background-color: #D9E5E5"><a href="http://www.cra.org" target="_blank"><img src="images/nav/subList.gif" border="0" width="140" height="15"></a> 
+ </DIV>
+<DIV id=fourthheader
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 140px; layer-background-color: #D9E5E5"><A
+href="#" onclick="WM_toggle('fourth'); WM_imageToggle('fourthImage', 'images/nav/comUp.gif', 'images/nav/comUp.gif', 'fourthheader');
+return false">
+<IMG border=0 name=fourthImage src="images/nav/comUp.gif"></A> </DIV>
+  <DIV class=menu id=fourth
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 140px; layer-background-color: #D9E5E5">
+    <table width="140" border="0" cellspacing="0" cellpadding="0">
+      <tr> 
+        <td><img src="spacer.gif" width="18"><a href="steering.html" class="links"><font color="152F90">&#149;Steering 
+          Committee</font></a> </td>
+      </tr>
+      <tr> 
+        <td><img src="spacer.gif" width="18"><a href="organizing.html" class="links"><font color="152F90">&#149;Organizing 
+          Committee</font></a></td>
+      </tr>
+      <tr> 
+        <td><img src="spacer.gif" width="18"><a href="programCom.html" class="links"><font color="152F90">&#149;Program 
+          Committee</font></a></td>
+      </tr>
+    </table>
+  </DIV>
+  <DIV id=fifththheader
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 140px; layer-background-color: #D9E5E5"><A
+href="program_info.html">
+<IMG border=0 name=fifthImage src="images/nav/progUp.gif"></A> </DIV>
+  <DIV class=menu id=fifth
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 100px; layer-background-color: #D9E5E5"> 
+  </DIV>
+  <DIV id=sixththheader
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 140px; layer-background-color: #D9E5E5"><A
+href="submissions.html">
+<IMG border=0 name=sixthImage src="images/nav/subUp.gif"></A> </DIV>
+  <DIV class=menu id=sixth
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 100px; layer-background-color: #D9E5E5"> 
+  </DIV>
+ <DIV id=seventhheader
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 140px; layer-background-color: #D9E5E5"><A
+href="#" onclick="WM_toggle('seventh'); WM_imageToggle('seventhImage', 'images/nav/infoUp.gif', 'images/nav/infoUp.gif', 'seventhheader');
+return false">
+<IMG border=0 name=seventhImage src="images/nav/infoUp.gif"></A> </DIV>
+  <DIV class=menu id=seventh
+style="BACKGROUND-COLOR: #D9E5E5; BORDER-BOTTOM: #D9E5E5 1px; BORDER-LEFT: #D9E5E5 1px; BORDER-RIGHT: #D9E5E5 1px; BORDER-TOP: #D9E5E5 1px; POSITION: absolute; WIDTH: 140px; layer-background-color: #D9E5E5">
+  <table width="140" border="0" cellspacing="0" cellpadding="0">
+      <tr> 
+        <td><img src="spacer.gif" width ="18" height="1"><a href="http://www.sandiego.org" target="_blank" class="links"><font color="152F90">&#149;About 
+          San Diego</font></a> </td>
+      </tr>
+      <tr> 
+        <td class="links"><img src="spacer.gif" width ="18"><a href="previous.html" class="links"><font color="152F90">&#149;Previous 
+          RECOMB</font><br>
+          <img src="spacer.gif" width ="20" height="1" border="0"><font color="152F90">Conferences</font></a> 
+        </td>
+      </tr>
+    </table>
+  </DIV>
+</div>
+<div align="left"><img src="main_r1_c1.gif" width="800" height="34"> 
+  <table width="800" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr valign="bottom" bgcolor="#000000"> 
+      <td colspan="2"><img src="main_r2_c1.gif" width="800" height="100"></td>
+    </tr>
+    <tr> 
+      <td width="766"></td>
+      <td width="34"></td>
+    </tr>
+    <tr> 
+      <td colspan="2"> 
+        <table border="0" cellspacing="0" cellpadding="0" width="800">
+          <tr> 
+            <td width="153" bgcolor="#D6E5E5" valign="top" height="325">
+              <div align="center"><img src="spacer.gif" width="140" height="1"> 
+                <img src="images/recomb04logo.gif" width="140" height="47"><br>
+                <img src="images/date.gif" width="140" height="15"> </div>
+            </td>
+            <td valign="top" height="450"> 
+              <table width="100%" border="0" cellspacing="3" cellpadding="3">
+                <tr> 
+                  <td valign="top" width="647"> 
+                    <p><font face="Arial, Helvetica, sans-serif" size="3"><i><font size="4"><b><font color="152F90">Submissions</font></b></font></i></font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+                      <br>
+                      </font></p>
+                    <font size="2" face="Arial, Helvetica, sans-serif">Information 
+                    for this page is not available at this time. Please check 
+                    back later.</font> 
+                </tr>
+                <tr> 
+                  <td valign="top" height="43">&nbsp; 
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan="2" bgcolor="#666666" height="2"> 
+              <div align="center"></div>
+              <img src="images/spacer.gif" width="1" height="1"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

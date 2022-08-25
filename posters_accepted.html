@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>RECOMB 2004</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<SCRIPT language=Javascript>
+<!-- Hide script from old browsers
+
+
+
+document.WM = new Object();
+document.WM.hirelist = new Object();
+document.WM.hirelist.expandos = new Array();
+document.WM.hirelist.heights = new Array();
+document.WM.hirelist.names = new Array();
+
+function WM_toggle(id) {
+  if (document.all){
+    if(document.all[id].style.display == 'none'){
+      document.all[id].style.display = '';
+    } else {
+      document.all[id].style.display = 'none';
+    }
+  } else if (document.getElementById){
+    if(document.getElementById(id).style.display == 'none'){
+      document.getElementById(id).style.display = 'block';
+    } else {
+      document.getElementById(id).style.display = 'none';
+    }
+  } else if(document.layers) {
+      if(parseInt(id + 1)){
+	  ditem = id + 1;
+      } else {
+	  ditem = document.WM.hirelist.names[id];
+      }
+      if(document.WM.hirelist.expandos[ditem].clip.bottom == 0) {
+	     document.WM.hirelist.expandos[ditem].clip.bottom = document.WM.hirelist.heights[ditem];
+      } else {
+	  document.WM.hirelist.expandos[ditem].clip.bottom = 0;
+      }
+      WM_align();
+  }
+}
+
+function WM_align() {
+    var i,j,stupid_netscape_array_infinate_loop_error;
+    stupid_netscape_array_infinate_loop_error = document.WM.hirelist.expandos.length;
+    for(i=0; i<stupid_netscape_array_infinate_loop_error; i++) {
+		j = i + 1;
+		if(document.WM.hirelist.expandos[j]){
+	    	if(document.layers) {
+				document.WM.hirelist.expandos[j].top = document.WM.hirelist.expandos[i].top + document.WM.hirelist.expandos[i].clip.bottom;
+	   		}
+		}
+    }
+}
+
+function WM_initialize_toolbar(){
+    if(document.layers) {
+		for(i=0; i<document.layers['container'].document.layers.length; i++){
+	    	document.WM.hirelist.expandos[i] = document.layers['container'].document.layers[i];
+	    	document.WM.hirelist.names[document.layers['container'].document.layers[i].name] = i;
+	    	document.WM.hirelist.heights[i] = document.WM.hirelist.expandos[i].clip.bottom;
+		}
+		for (p=0;p<document.WM.hirelist.expandos.length;p=p+2){
+	    	WM_toggle(p);
+		}
+		document.layers['container'].visibility = 'visible';
+    } else if (document.all){
+		for(i = 0; i < document.all('container').all.length; i++){
+		    document.all('container').all[i].style.position = 'relative';
+		    if(document.all('container').all[i].className == 'menu'){
+			document.all('container').all[i].style.display = 'none';
+		    }
+		}
+		document.all('container').style.visibility = 'visible';
+    } else if (document.getElementsByTagName && document.getElementById){
+		var contained = document.getElementById('container').getElementsByTagName('div');
+		for(i = 0; i < contained.length; i++){
+		    contained[i].style.position = 'relative';
+		    if(contained[i].getAttribute('class') == 'menu'){
+			contained[i].style.display = 'none';
+		    }
+		}
+		document.getElementById('container').style.visibility = 'visible';
+    }
+}
+
+// End the hiding -->
+</SCRIPT>
+<SCRIPT language=JavaScript>
+<!--
+function WM_imageToggle(daImage, src1, src2, netscape_container){
+  var objStr,obj;
+  // Check to make sure that images are supported in the DOM.
+	  myImage = document.images[daImage];
+  if(document.layers){
+      myImage = document.layers['container'].document.layers[netscape_container].document.images[daImage];
+  }
+  if(document.images){
+    // Check to see whether you are using a name, number, or object
+      if(myImage.src == src1){
+	  	myImage.src = src2;
+      } else {
+	  	myImage.src = src1;
+      }
+  }
+}
+// -->
+</SCRIPT>
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR>
+
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<link rel="stylesheet" href="recomb.css" type="text/css">
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#336633" vlink="#336633" alink="#336633" topmargin="0" onload=WM_initialize_toolbar();>
+<table width="800" border="0" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td valign="top" height="43" width="1030"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="3"><i><font size="4"><b><font color="152F90">Accepted 
+        Posters </font></b></font></i></font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+        <br>
+        <br>
+        <a href="cgi-admin/posterabstracts.cgi">View Poster Abstracts</a><br><br><a
+	href="http://newton.sdsc.edu:9080/search.html" target="_blank">Search Poster Abstracts</a></font></p>
+  </tr>
+</table>
+</body>
+</html>

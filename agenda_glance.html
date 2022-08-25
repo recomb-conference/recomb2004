@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>RECOMB 2004</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<SCRIPT language=Javascript>
+<!-- Hide script from old browsers
+
+
+
+document.WM = new Object();
+document.WM.hirelist = new Object();
+document.WM.hirelist.expandos = new Array();
+document.WM.hirelist.heights = new Array();
+document.WM.hirelist.names = new Array();
+
+function WM_toggle(id) {
+  if (document.all){
+    if(document.all[id].style.display == 'none'){
+      document.all[id].style.display = '';
+    } else {
+      document.all[id].style.display = 'none';
+    }
+  } else if (document.getElementById){
+    if(document.getElementById(id).style.display == 'none'){
+      document.getElementById(id).style.display = 'block';
+    } else {
+      document.getElementById(id).style.display = 'none';
+    }
+  } else if(document.layers) {
+      if(parseInt(id + 1)){
+	  ditem = id + 1;
+      } else {
+	  ditem = document.WM.hirelist.names[id];
+      }
+      if(document.WM.hirelist.expandos[ditem].clip.bottom == 0) {
+	     document.WM.hirelist.expandos[ditem].clip.bottom = document.WM.hirelist.heights[ditem];
+      } else {
+	  document.WM.hirelist.expandos[ditem].clip.bottom = 0;
+      }
+      WM_align();
+  }
+}
+
+function WM_align() {
+    var i,j,stupid_netscape_array_infinate_loop_error;
+    stupid_netscape_array_infinate_loop_error = document.WM.hirelist.expandos.length;
+    for(i=0; i<stupid_netscape_array_infinate_loop_error; i++) {
+		j = i + 1;
+		if(document.WM.hirelist.expandos[j]){
+	    	if(document.layers) {
+				document.WM.hirelist.expandos[j].top = document.WM.hirelist.expandos[i].top + document.WM.hirelist.expandos[i].clip.bottom;
+	   		}
+		}
+    }
+}
+
+function WM_initialize_toolbar(){
+    if(document.layers) {
+		for(i=0; i<document.layers['container'].document.layers.length; i++){
+	    	document.WM.hirelist.expandos[i] = document.layers['container'].document.layers[i];
+	    	document.WM.hirelist.names[document.layers['container'].document.layers[i].name] = i;
+	    	document.WM.hirelist.heights[i] = document.WM.hirelist.expandos[i].clip.bottom;
+		}
+		for (p=0;p<document.WM.hirelist.expandos.length;p=p+2){
+	    	WM_toggle(p);
+		}
+		document.layers['container'].visibility = 'visible';
+    } else if (document.all){
+		for(i = 0; i < document.all('container').all.length; i++){
+		    document.all('container').all[i].style.position = 'relative';
+		    if(document.all('container').all[i].className == 'menu'){
+			document.all('container').all[i].style.display = 'none';
+		    }
+		}
+		document.all('container').style.visibility = 'visible';
+    } else if (document.getElementsByTagName && document.getElementById){
+		var contained = document.getElementById('container').getElementsByTagName('div');
+		for(i = 0; i < contained.length; i++){
+		    contained[i].style.position = 'relative';
+		    if(contained[i].getAttribute('class') == 'menu'){
+			contained[i].style.display = 'none';
+		    }
+		}
+		document.getElementById('container').style.visibility = 'visible';
+    }
+}
+
+// End the hiding -->
+</SCRIPT>
+<SCRIPT language=JavaScript>
+<!--
+function WM_imageToggle(daImage, src1, src2, netscape_container){
+  var objStr,obj;
+  // Check to make sure that images are supported in the DOM.
+	  myImage = document.images[daImage];
+  if(document.layers){
+      myImage = document.layers['container'].document.layers[netscape_container].document.images[daImage];
+  }
+  if(document.images){
+    // Check to see whether you are using a name, number, or object
+      if(myImage.src == src1){
+	  	myImage.src = src2;
+      } else {
+	  	myImage.src = src1;
+      }
+  }
+}
+// -->
+</SCRIPT>
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR>
+
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<link rel="stylesheet" href="../recomb.css" type="text/css">
+</HEAD>
+<body bgcolor="#FFFFFF" text="#000000" link="#336633" vlink="#336633" alink="#336633" topmargin="0" onload=WM_initialize_toolbar();>
+<table width="625" border="0" cellspacing="3" cellpadding="3">
+  <tr> 
+    <td valign="top" height="43" width="1030"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="3"><i><font size="4"><b><font color="152F90">Agenda-at-a-glance</font></b></font></i></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The First Annual RECOMB Satellite Workshop on Regulatory Genomics will be held just prior to the RECOMB conference at the
+        University of California-San Diego Campus March 26-27, 2004.
+        Registration is open at: <a href="http://www.cs.ucsd.edu/%7Eeeskin/recombreg04/">http://www.cs.ucsd.edu/~eeskin/recombreg04/</a> If
+        you would like further information on this event, please contact Eleazar
+      Eskin at <a href="mailto:eeskin@cs.ucsd.edu">eeskin@cs.ucsd.edu</a>.</font></p>
+      <table width="600" border="0" cellspacing="3" cellpadding="3">
+        <tr> 
+          <td colspan="3" valign="top" bgcolor="#152F90"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><b>Saturday, 
+            March 27, 2004</b></font></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">5:00pm 
+            - 8:00pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Registration 
+            Open </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">2nd Floor Foyer</font></em></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">6:00pm 
+            - 8:00pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Opening 
+            Reception </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">TBA</font></em></td>
+        </tr>
+        <tr> 
+          <td colspan="3" valign="top" bgcolor="#152f90"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><b>Sunday, 
+            March 28, 2004</b></font></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">7:30am - 5:30pm 
+            </font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Registration 
+            </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">2nd Floor Foyer</font></em></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">7:30am 
+            - 8:30am</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Continental 
+            Breakfast </font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">8:30am 
+            - 5:25pm </font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Scientific 
+            Session </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">California Ballroom</font></em></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">10:30am 
+            - 10:55am</font></td>
+          <td valign="top" width="250"><font size="2" face="Arial, Helvetica, sans-serif">Coffee</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">12:10pm-2:00pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Lunch 
+            at hotel </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">Harbor Terrace , 4th floor </font></em></td>
+        </tr>
+        <tr>
+          <td valign="top"><font face="Arial, Helvetica, sans-serif" size="2">3:45pm - 4:10pm</font></td>
+          <td width="250" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Coffee</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><font face="Arial, Helvetica, sans-serif" size="2">5:30pm - 7:30pm</font></td>
+          <td width="250" valign="top"><font face="Arial, Helvetica, sans-serif" size="2">Poster Session Group A authors present</font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">Garden Pavillion, 4th floor </font></em></td>
+        </tr>
+        
+        <tr> 
+          <td valign="top" colspan="3" bgcolor="152f90"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><b>Monday, 
+            March 29, 2004</b></font></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">7:30am - 5:30pm </font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Registration 
+            </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">2nd Floor Foyer</font></em></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">7:30am 
+            - 8:30am </font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Continental 
+            Breakfast </font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">8:30am 
+            - 5:50pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Scientific 
+            Session </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">California Ballroom</font></em></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">10:15am - 10:40am</font></td>
+          <td valign="top" width="250"><font size="2" face="Arial, Helvetica, sans-serif">Coffee</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">11:55am - 2:00pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">BOF lunch off site restaurants </font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><font face="Arial, Helvetica, sans-serif" size="2">3:45pm - 4:10pm</font></td>
+          <td width="250" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Coffee</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">6:00pm - 7:00pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">RECOMB Business Meeting</font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">California Ballroom</font></em></td>
+        </tr>
+        <tr> 
+          <td valign="top" colspan="3" bgcolor="152f90"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><b>Tuesday, 
+            March 30, 2004</b></font></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">7:30am </font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Registration 
+            </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">2nd Floor Foyer</font></em></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">7:30am 
+            - 8:30am</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Continental 
+            Breakfast </font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">8:30am 
+            - 5:00pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Scientific 
+            Sessions </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">California Ballroom</font></em></td>
+        </tr>
+        <tr>
+          <td valign="top"><font face="Arial, Helvetica, sans-serif" size="2">10:15am - 10:40am</font></td>
+          <td width="250" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Coffee</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">11:55am - 2:00pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Lunch on own</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><font face="Arial, Helvetica, sans-serif" size="2">3:45pm - 4:10pm</font></td>
+          <td width="250" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Coffee</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">5:00pm - 7:00pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Poster Session Group B authors present</font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">Garden Pavillion, 4th floor </font></em></td>
+        </tr>
+        <tr>
+          <td valign="top"><font face="Arial, Helvetica, sans-serif" size="2">5:00pm - 7:00pm</font></td>
+          <td width="250" valign="top"><font face="Arial, Helvetica, sans-serif" size="2">PDB talk </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">California Ballroom</font></em></td>
+        </tr>
+        <tr>
+          <td valign="top"><font face="Arial, Helvetica, sans-serif" size="2">7:00pm - 7:30pm</font></td>
+          <td width="250" valign="top"><font face="Arial, Helvetica, sans-serif" size="2">Buses to Dinner at Aquarium</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">7:30pm - 10:00pm </font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Dinner at Aquarium (optional)</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" colspan="3" bgcolor="152f90"><font face="Arial, Helvetica, sans-serif" size="2"><b><font color="#FFFFFF">Wednesday, 
+            March 31, 2004</font></b></font></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">7:30am 
+            - 8:30am</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Continental 
+            Breakfast </font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">8:30am 
+            - 5:15pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Scientific 
+            Session</font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">California Ballroom</font></em></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">10:40am 
+            - 11:05am </font></td>
+          <td valign="top" height="3" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Coffee<br>
+          </font></td>
+          <td width="200" valign="top"><font size="2"></font></td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">12:20pm-2:00pm 
+            </font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Lunch 
+            at hotel </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">Harbor Terrace , 4th floor </font></em></td>
+        </tr>
+        <tr>
+          <td valign="top"><font face="Arial, Helvetica, sans-serif" size="2">3:45pm - 4:10pm</font></td>
+          <td width="250" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Coffee</font></td>
+          <td width="200" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" width="150"><font face="Arial, Helvetica, sans-serif" size="2">5:00pm-5:15pm</font></td>
+          <td valign="top" width="250"><font face="Arial, Helvetica, sans-serif" size="2">Awards 
+            Ceremony </font></td>
+          <td width="200" valign="top"><em><font face="Arial, Helvetica, sans-serif" size="2">California Ballroom</font></em></td>
+        </tr>
+      </table>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> <br>
+        </font></p>
+  </tr>
+</table>
+<div align="left"></div>
+</body>
+</html>
